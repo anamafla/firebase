@@ -29,7 +29,7 @@ class AppNavbar extends Component {
   render() {
     const { isAuthenticated } = this.state;
     const { auth } = this.props;
-    const { allowRegistration } = this.props.settings
+    const { allowRegistration } = this.props.settings;
 
     return (
       <nav className="navbar navbar-expand-md navbar-dark bg-primary mb-4">
@@ -87,7 +87,7 @@ class AppNavbar extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/login" className="nav-link">
+                  <Link to="/register" className="nav-link">
                     Register
                   </Link>
                 </li>

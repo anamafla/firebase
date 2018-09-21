@@ -21,7 +21,7 @@ class EditClient extends Component {
     e.preventDefault();
 
     const { client, firestore, history } = this.props;
- 
+
     //Update Client
     const updClient = {
       firstName: this.firstNameInput.current.value,
@@ -42,8 +42,7 @@ class EditClient extends Component {
 
   render() {
     const { client } = this.props;
-    const { disableBalanceOnEdit } = this.props.settings
-
+    const { disableBalanceOnEdit } = this.props.settings;
 
     if (client) {
       return (
